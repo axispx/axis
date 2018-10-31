@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <article class="article">
+          <h1 class="post_title">{{ .Title }}</h1>
+          <p>{{ .Content }}</p>
+        </article>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

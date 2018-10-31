@@ -1,0 +1,12 @@
+{{define "main"}}
+  {{ if gt (len .Data.Pages) 0 }}
+    {{ range .Data.Pages }}
+    <h1 class="post_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <div class="article">
+      {{ safeHTML (index (split .Content "\n") 2) }}
+    </div>
+    {{ end }}
+  {{ else }}
+  <div class="empty">No articles published yet.</div>
+  {{ end }}
+{{end}}

@@ -1,0 +1,7 @@
+<footer>
+  <div id="social">
+    {{ range .Site.Params.Social }}
+    <a href="{{ .url }}"><i class="{{ .fa_icon }}"></i></a>
+    {{ end }}
+  </div>
+</footer>
