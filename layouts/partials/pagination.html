@@ -1,3 +1,4 @@
+{{ if gt (.Paginator.TotalPages) 1 }}
 <div id="pagination">
   <div>
     {{ if .Paginator.HasPrev }}
@@ -16,3 +17,4 @@
     <p class="no_page">Next</p>
     {{ end  }}
 </div>
+{{ end }}
