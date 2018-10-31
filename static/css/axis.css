@@ -52,6 +52,7 @@ header {
 }
 
 .post_title {
+  margin: 0 0 2rem 0;
   font-size: 4.6rem;
   font-weight: normal;
   letter-spacing: -0.05rem;
@@ -66,6 +67,7 @@ header {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2.0rem;
   font-size: 2.0rem;
   text-align: justify;
 }
@@ -82,8 +84,8 @@ aside {
   margin-left: 30px;
   margin-bottom: 30px;
   border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   padding: 15px;
   font-size: 1.7rem;
   line-height: 1.8;
@@ -94,7 +96,7 @@ aside {
 }
 
 aside:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 aside div {
@@ -133,7 +135,6 @@ aside a {
   aside:hover {
     box-shadow: none;
   }
-
 }
 
 footer {
@@ -181,4 +182,90 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 4.0rem;
+}
+
+.highlight pre {
+  padding: 1rem;
+}
+
+/* Code */
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code {
+  padding: .25em .5em;
+  font-size: 1.8rem;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+
+pre code {
+  padding: 0;
+  font-size: 1.8rem;
+  color: inherit;
+  background-color: transparent;
+}
+
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
 }

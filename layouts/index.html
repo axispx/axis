@@ -3,7 +3,7 @@
     {{ range .Data.Pages }}
     <h1 class="post_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     <div class="article">
-      {{ safeHTML (index (split .Content "\n") 2) }}
+      {{ .Description }}
     </div>
     {{ end }}
   {{ else }}
