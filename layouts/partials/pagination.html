@@ -1,18 +1,18 @@
 <div id="pagination">
   <div>
     {{ if .Paginator.HasPrev }}
-      <a href="/page/{{ sub .Paginator.PageNumber 1 }}/">
-        Prev
-      </a>
+    <p><a href="/page/{{ sub .Paginator.PageNumber 1 }}/">
+      Prev
+    </a></p>
     {{ else }}
-      <p class="no_page">Prev</p>
+    <p class="no_page">Prev</p>
     {{ end  }}
   </div>
     {{ if .Paginator.HasNext }}
-      <a href="/page/{{ add .Paginator.PageNumber 1 }}/">
-        Next
-      </a>
+    <p><a href="/page/{{ add .Paginator.PageNumber 1 }}/">
+      Next
+    </a></p>
     {{ else }}
-      <p class="no_page">Next</p>
+    <p class="no_page">Next</p>
     {{ end  }}
 </div>
