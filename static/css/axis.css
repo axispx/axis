@@ -184,8 +184,21 @@ footer {
   font-size: 4.0rem;
 }
 
-.highlight pre {
-  padding: 1rem;
+#pagination {
+  border-top: 1px dotted black;
+  font-size: 2.0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pagination a {
+  color: #ea4335;
+  font-weight: bold;
+}
+
+.no_page {
+  color: grey;
 }
 
 /* Code */
@@ -226,6 +239,7 @@ pre code {
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
+  padding: 1rem;
 }
 
 .highlight pre {

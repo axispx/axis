@@ -1,11 +1,12 @@
 {{define "main"}}
-  {{ if gt (len .Data.Pages) 0 }}
-    {{ range .Data.Pages }}
+  {{ if gt (len .Paginator.Pages) 0 }}
+    {{ range .Paginator.Pages }}
     <h1 class="post_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     <div class="article">
       {{ .Description }}
     </div>
     {{ end }}
+    {{ partial "pagination.html" . }}
   {{ else }}
   <div class="empty">No articles published yet.</div>
   {{ end }}
