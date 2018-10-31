@@ -184,6 +184,11 @@ footer {
   font-size: 3.6rem;
 }
 
+.page_404 a {
+  color: #ea4335;
+  font-weight: bold;
+}
+
 #pagination {
   border-top: 1px dotted black;
   font-size: 1.8rem;
