@@ -243,10 +243,8 @@ pre {
   padding: 1rem;
   font-size: 1.6rem;
   line-height: 1.2;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
+  overflow-x: auto;
+  overflow-wrap: normal;
   background-color: #f9f9f9;
 }
 
