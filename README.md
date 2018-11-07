@@ -3,6 +3,8 @@ A minimal and light [Hugo](https://gohugo.io/) theme for personal blogs.
 
 ![axis](https://image.ibb.co/dxpp3V/axistheme.png)
 
+You can see it in action on my [blog](https://anarchyrucks.github.io/).
+
 ## Configuration Parameters
 
 ### Avatar URL
