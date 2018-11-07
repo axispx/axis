@@ -11,6 +11,7 @@ You can see it in action on my [blog](https://anarchyrucks.github.io/).
 Link for your avatar image.
 ```
 [params]
+	<open graph parameters here>	
     avatar_url = "https://youravatarurl.com/img"
 ```
 
