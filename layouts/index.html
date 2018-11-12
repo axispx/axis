@@ -2,7 +2,7 @@
 <div id="post-list">
   {{ if gt (len .Paginator.Pages) 0 }}
     {{ range .Paginator.Pages }}
-    <h1 class="post_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <h2 class="post_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <div class="article">
       {{ .Description }}
     </div>

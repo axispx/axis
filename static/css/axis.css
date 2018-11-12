@@ -57,6 +57,7 @@ header {
   font-size: 3.6rem;
   font-weight: normal;
   letter-spacing: -0.05rem;
+  text-align: left;
 }
 
 .post_title a {
